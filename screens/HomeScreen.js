@@ -22,16 +22,17 @@ export default function HomeScreen(){
 
   return (
     <TailwindProvider>
-      <SafeAreaView className={"flex-1 bg-white"}>
-        <View className={"bg-[#00cc81] justify-center items-center h-20 pt-5 border-b-2 mb-3 flex-row"}>
-          <TouchableOpacity onPress={() => navigation.navigate("Settings")} className={"absolute left-5 top-8"}>
-            <Cog6ToothIcon height={30} width={30} color={"black"}/>
-          </TouchableOpacity>
+      <View className={"bg-[#00cc81] justify-center items-center h-28 pt-5 border-b-2 flex-row"}>
+        <TouchableOpacity onPress={() => navigation.navigate("Settings")} className={"absolute left-5 top-12"}>
+          <Cog6ToothIcon height={30} width={30} color={"black"}/>
+        </TouchableOpacity>
+        <View className={"mt-3"}>
           <Text className={"text-3xl"}>
             Resourcify
           </Text>
         </View>
-
+      </View>
+      <View className={"flex-1 bg-white"}>
         <ScrollView>
           <View className={"flex-row justify-around"}>
             <Topic className="flex-1" title={"Housing"}
@@ -56,7 +57,7 @@ export default function HomeScreen(){
             <Topic className="flex-1" title={"DMV"} description={"Description"} screenToNavigate={""}/>
           </View>
         </ScrollView>
-      </SafeAreaView>
+      </View>
     </TailwindProvider>
   );
 }
