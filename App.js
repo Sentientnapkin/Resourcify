@@ -28,13 +28,8 @@ export default function App() {
             <Stack.Screen name={"Shelters"} component={SheltersScreen}/>
             <Stack.Screen name={"Settings"} component={SettingsScreen}
                           options={{presentation: 'modal', headerShown: true,
-                            headerStyle: {
-                            backgroundColor: '#00cc81',
-                          },
-                            headerTitleStyle: {
-                              fontSize: 30,
-                          },
-                          }}/>
+                            headerStyle: {backgroundColor: '#00cc81',},
+                            headerTitleStyle: {fontSize: 30,},}}/>
           </Stack.Navigator>
         </TailwindProvider>
       </Provider>
