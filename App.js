@@ -11,8 +11,9 @@ import SettingsScreen from "./screens/SettingsScreen";
 import SheltersScreen from "./screens/SheltersScreen";
 import DMVScreen from "./screens/DMVScreen";
 import DMV18PlusScreen from "./screens/DMV18PlusScreen";
-import DMVU18Screen from "./screens/DMVU18Screen";
 import Screen1 from "./screens/DMVU18/Screen1";
+import Screen2 from "./screens/DMVU18/Screen2";
+import Screen3 from "./screens/DMVU18/Screen3";
 
 
 const Stack = createNativeStackNavigator();
@@ -42,12 +43,15 @@ export default function App() {
                             headerTitleStyle: {fontSize: 30,},}}/>
             <Stack.Screen name={"DMVScreen1"} component={Screen1}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
+                            title: "DMV",
                             headerTitleStyle: {fontSize: 30,},}}/>
             <Stack.Screen name={"DMVScreen2"} component={Screen2}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
+                            title: "DMV",
                             headerTitleStyle: {fontSize: 30,},}}/>
             <Stack.Screen name={"DMVScreen3"} component={Screen3}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
+                            title: "DMV",
                             headerTitleStyle: {fontSize: 30,},}}/>
           </Stack.Navigator>
         </TailwindProvider>

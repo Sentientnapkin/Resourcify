@@ -18,7 +18,7 @@ export default function DMVScreen (){
       </TouchableOpacity>
 
       <TouchableOpacity onPress={() => {
-        navigation.navigate("DMVU18");
+        navigation.navigate("DMVScreen1");
       }}>
         <View className={"px-5 py-10 justify-center border-b-2 border-gray"}>
           <Text className={"text-2xl"}>

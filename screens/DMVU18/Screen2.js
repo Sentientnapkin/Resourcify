@@ -1,24 +1,31 @@
-import {View, Text, SafeAreaView, TouchableOpacity} from 'react-native';
+import {View, Text, SafeAreaView, TouchableOpacity, Linking} from 'react-native';
 import React from "react";
-import {ChevronLeftIcon, ChevronRightIcon} from "react-native-heroicons/mini";
+import {ArrowTopRightOnSquareIcon, ChevronLeftIcon, ChevronRightIcon} from "react-native-heroicons/mini";
+import {useNavigation} from "@react-navigation/native";
 
 export default function Screen2 (){
+  const navigation = useNavigation();
+
   return (
-    <SafeAreaView className={"bg-white m-5 flex-row"}>
-      <TouchableOpacity>
-        <ChevronLeftIcon height={20} width={20}/>
-      </TouchableOpacity>
+      <View className={"flex-1 justify-center"}>
+        <SafeAreaView className={"flex-row items-center"}>
+          <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMVScreen1")}>
+            <ChevronLeftIcon color={"black"} size={48}/>
+          </TouchableOpacity>
 
-      <View className={"flex-1"}>
-        <Text>
-          The first step of the process is to complete Drivers Ed. It is recommended that you do your drivers ed around 2 months before
-          you turn 15.5 years old, as at 15.5 years old you can get your permit, and Drivers Ed is required to get your permit.
-        </Text>
+          <View className={"flex-1 bg-white p-3 rounded-lg"}>
+            <Text className={"text-lg"}>
+              Drivers Ed is usually 30 hour course that you can take online or in person.
+              Some online courses can take under 30 hours, and they still count as a completed drivers ed course.
+              One such course can be seen if you click here:    {""}
+              <ArrowTopRightOnSquareIcon onPress={() => Linking.openURL('https://www.mycaliforniapermit.com')}/>
+            </Text>
+          </View>
+
+          <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMVScreen3")}>
+            <ChevronRightIcon size={48} color={"black"}/>
+          </TouchableOpacity>
+        </SafeAreaView>
       </View>
-
-      <TouchableOpacity>
-        <ChevronRightIcon height={20} width={20}/>
-      </TouchableOpacity>
-    </SafeAreaView>
   );
 }
