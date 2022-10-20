@@ -26,6 +26,16 @@ export default function DMVScreen (){
           </Text>
         </View>
       </TouchableOpacity>
+
+      <TouchableOpacity onPress={() => {
+        navigation.navigate("");
+      }}>
+        <View className={"px-5 py-10 justify-center border-b-2 border-gray"}>
+          <Text className={"text-2xl"}>
+            If you are unable to provide proof of legal presence in California, click here
+          </Text>
+        </View>
+      </TouchableOpacity>
     </SafeAreaView>
   );
 }
