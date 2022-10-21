@@ -3,7 +3,7 @@ import React from "react";
 import {ArrowTopRightOnSquareIcon, ChevronLeftIcon, ChevronRightIcon} from "react-native-heroicons/mini";
 import {useNavigation} from "@react-navigation/native";
 
-export default function DMVScreen2 (){
+export default function DMVU18Screen2 (){
   const navigation = useNavigation();
 
   return (
@@ -30,7 +30,7 @@ export default function DMVScreen2 (){
             </TouchableOpacity>
           </View>
 
-          <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMVScreen3")}>
+          <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMVU18Screen3")}>
             <ChevronRightIcon size={48} color={"black"}/>
           </TouchableOpacity>
         </SafeAreaView>

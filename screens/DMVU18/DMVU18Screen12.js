@@ -3,7 +3,7 @@ import React from "react";
 import {ChevronLeftIcon} from "react-native-heroicons/mini";
 import {useNavigation} from "@react-navigation/native";
 
-export default function DMVScreen12 () {
+export default function DMVU18Screen12 () {
   const navigation = useNavigation();
 
   return (

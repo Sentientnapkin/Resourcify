@@ -35,7 +35,7 @@ export default function DMVScreen4 (){
             </TouchableOpacity>
       </View>
 
-        <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMVScreen6")}>
+        <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMVU18Screen6")}>
           <ChevronRightIcon size={48} color={"black"}/>
         </TouchableOpacity>
       </SafeAreaView>

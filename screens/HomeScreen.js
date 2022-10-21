@@ -38,7 +38,7 @@ export default function HomeScreen(){
             <Topic className="flex-1" title={"Housing"}
                    description={"Best locations for houses in the area, based on price, schools, crime rate, and more."}
                    screenToNavigate={"Housing"}/>
-            <Topic className="flex-1" title={"Shelters"} description={"Description"} screenToNavigate={"Shelters"}/>
+            <Topic className="flex-1" title={"Shelters"} description={"Find Shelters in Fremont"} screenToNavigate={"Shelters"}/>
           </View>
 
           <View className={"flex-row justify-around"}>

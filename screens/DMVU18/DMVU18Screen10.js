@@ -3,38 +3,38 @@ import React from "react";
 import {ChevronLeftIcon, ChevronRightIcon} from "react-native-heroicons/mini";
 import {useNavigation} from "@react-navigation/native";
 
-export default function DMVScreen8 () {
+export default function DMVScreen7 () {
   const navigation = useNavigation();
 
   return (
     <View className={"flex-1 justify-center"}>
       <SafeAreaView className={"flex-row items-center"}>
-        <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMVScreen7")}>
+        <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMVU18Screen9")}>
           <ChevronLeftIcon color={"black"} size={48}/>
         </TouchableOpacity>
 
         <View className={"flex-1 bg-white p-3 rounded-lg"}>
           <Text className={"text-lg"}>
-            Once you have passed the test, your next test will be in 6 months to get your provisional license.
-            Before that, you need to take 3 drive lessons. You can drive with a parent before your first lesson, and it is recommended to have some practice before then.
+            6 months after you passed the permit test, you are able to take the behind the wheel test. To schedule an appointment,
+            click on the image below and select "Automobile" for behind the wheel test. Put in the number for your permit where it asks
           </Text>
 
           <TouchableOpacity
-            onPress={() => Linking.openURL('https://coastlineacademy.com')}>
+            onPress={() => Linking.openURL('https://www.dmv.ca.gov/portal/appointments/select-appointment-type')}>
             <Image
-              source={{uri: 'https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/heam9qpqmmsn61s1ntty'}}
+              source={{uri: 'https://www.dmv.ca.gov/portal/uploads/2022/06/DMV_Logo.png'}}
               style={{width: '100%', height: 220}}
               resizeMode={"stretch"}
             />
           </TouchableOpacity>
 
           <Text className={"text-lg"}>
-            Click above to schedule lessons with Coastline Academy, a driving school in the bay area,
-            but also search "driving lessons bay area" on google and choose the best fit for you.
+            Arrive 1 hour before the appointment to be sure you make it in on time, as the DMV can often have very long
+            wait times. You can take the test as many times as you want, but you must wait a week between each attempt.
           </Text>
         </View>
 
-        <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMVScreen9")}>
+        <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMVScreen11")}>
           <ChevronRightIcon size={48} color={"black"}/>
         </TouchableOpacity>
       </SafeAreaView>
