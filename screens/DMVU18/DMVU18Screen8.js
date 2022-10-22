@@ -15,22 +15,16 @@ export default function DMVU18Screen8 () {
 
         <View className={"flex-1 bg-white p-3 rounded-lg"}>
           <Text className={"text-lg"}>
-            Once you have passed the test, your next test will be in 6 months to get your provisional license.
-            Before that, you need to take 3 drive lessons. You can drive with a parent before your first lesson, and it is recommended to have some practice before then.
+            When you visit the DMV to take your drive test, you will first: {"\n"}
+            -Bring your California Identification Card or proof of identity and residency. (Federal Noncompliant/REAL ID/AB60) {"\n"}
+            -Pay the application fee. {"\n"}
+            -Pass a vision exam. {"\n"}
+            -Take a photo. {"\n"}
           </Text>
 
-          <TouchableOpacity
-            onPress={() => Linking.openURL('https://coastlineacademy.com')}>
-            <Image
-              source={{uri: 'https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/heam9qpqmmsn61s1ntty'}}
-              style={{width: '100%', height: 220}}
-              resizeMode={"stretch"}
-            />
-          </TouchableOpacity>
-
           <Text className={"text-lg"}>
-            Click above to schedule lessons with Coastline Academy, a driving school in the bay area,
-            but also search "driving lessons bay area" on google and choose the best fit for you.
+            Arrive 1 hour before the appointment to be sure you make it in on time, as the DMV can often have very long
+            wait times. You can take the test as many times as you want, but you must wait a week between each attempt.
           </Text>
         </View>
 

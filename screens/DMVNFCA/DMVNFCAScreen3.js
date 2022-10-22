@@ -3,13 +3,13 @@ import React from "react";
 import {ChevronLeftIcon, ChevronRightIcon} from "react-native-heroicons/mini";
 import {useNavigation} from "@react-navigation/native";
 
-export default function DMVU18Screen6 (){
+export default function DMVNFCAScreen3 (){
   const navigation = useNavigation();
 
   return (
     <View className={"flex-1 justify-center"}>
       <SafeAreaView className={"flex-row items-center"}>
-        <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMVU18Screen5")}>
+        <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMVNFCAScreen2")}>
           <ChevronLeftIcon color={"black"} size={48}/>
         </TouchableOpacity>
 
@@ -17,7 +17,7 @@ export default function DMVU18Screen6 (){
           <Text className={"text-lg"}>
             To see some DMV practice tests, click here on the image below.
             Scroll until you find "Regular drive (Class C)". Take these tests to practice.
-        </Text>
+          </Text>
 
           <TouchableOpacity className={"my-3"} onPress={() => Linking.openURL('https://www.dmv.ca.gov/portal/driver-education-and-safety/educational-materials/sample-driver-license-dl-knowledge-tests/')}>
             <Image
@@ -32,7 +32,7 @@ export default function DMVU18Screen6 (){
           </Text>
         </View>
 
-        <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMVU18Screen7")}>
+        <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMVNFCAScreen4")}>
           <ChevronRightIcon size={48} color={"black"}/>
         </TouchableOpacity>
       </SafeAreaView>

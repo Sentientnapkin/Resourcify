@@ -8,17 +8,27 @@ export default function DMVScreen (){
   return (
     <SafeAreaView className={"flex-1"}>
       <TouchableOpacity onPress={() => {
-        navigation.navigate("DMV18Plus");
+        navigation.navigate("DMV18PlusScreen1");
       }}>
         <View className={"px-5 py-10 justify-center border-y-2 border-gray"}>
           <Text className={"text-2xl"}>
-            If you are over the age of 18, click here
+            If you are over the age of 18 and you do not have a license, click here
           </Text>
         </View>
       </TouchableOpacity>
 
       <TouchableOpacity onPress={() => {
-        navigation.navigate("DMVScreen1");
+        navigation.navigate("DMVNFCAScreen1");
+      }}>
+        <View className={"px-5 py-10 justify-center border-y-2 border-gray"}>
+          <Text className={"text-2xl"}>
+            If you are over the age of 18 and you have a license from another state or country, click here
+          </Text>
+        </View>
+      </TouchableOpacity>
+
+      <TouchableOpacity onPress={() => {
+        navigation.navigate("DMVU18Screen1");
       }}>
         <View className={"px-5 py-10 justify-center border-b-2 border-gray"}>
           <Text className={"text-2xl"}>
@@ -28,7 +38,7 @@ export default function DMVScreen (){
       </TouchableOpacity>
 
       <TouchableOpacity onPress={() => {
-        navigation.navigate("");
+        navigation.navigate("DMVNLPScreen1");
       }}>
         <View className={"px-5 py-10 justify-center border-b-2 border-gray"}>
           <Text className={"text-2xl"}>

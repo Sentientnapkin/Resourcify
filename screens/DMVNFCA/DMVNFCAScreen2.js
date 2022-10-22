@@ -3,13 +3,13 @@ import React from "react";
 import {ArrowTopRightOnSquareIcon, ChevronLeftIcon, ChevronRightIcon} from "react-native-heroicons/mini";
 import {useNavigation} from "@react-navigation/native";
 
-export default function DMVU18Screen5 (){
+export default function DMVNFCAScreen2 (){
   const navigation = useNavigation();
 
   return (
     <View className={"flex-1 justify-center"}>
       <SafeAreaView className={"flex-row items-center"}>
-        <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMVU18Screen4")}>
+        <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMVNFCAScreen1")}>
           <ChevronLeftIcon color={"black"} size={48}/>
         </TouchableOpacity>
 
@@ -26,16 +26,16 @@ export default function DMVU18Screen5 (){
             </TouchableOpacity>
           </View>
 
-            <TouchableOpacity onPress={() => Linking.openURL('https://www.dmv.ca.gov/portal/handbook/california-driver-handbook/')}>
-              <Image
-                source={{uri:'https://s.driving-tests.org/img/manuals-v2/CA/ca-car.jpg'}}
-                style={{width:'100%', height: 300}}
-                resizeMode={"stretch"}
-              />
-            </TouchableOpacity>
-      </View>
+          <TouchableOpacity onPress={() => Linking.openURL('https://www.dmv.ca.gov/portal/handbook/california-driver-handbook/')}>
+            <Image
+              source={{uri:'https://s.driving-tests.org/img/manuals-v2/CA/ca-car.jpg'}}
+              style={{width:'100%', height: 300}}
+              resizeMode={"stretch"}
+            />
+          </TouchableOpacity>
+        </View>
 
-        <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMVU18Screen6")}>
+        <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMVNFCAScreen3")}>
           <ChevronRightIcon size={48} color={"black"}/>
         </TouchableOpacity>
       </SafeAreaView>

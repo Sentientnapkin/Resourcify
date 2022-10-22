@@ -10,7 +10,6 @@ import HousingScreen from "./screens/HousingScreen";
 import SettingsScreen from "./screens/SettingsScreen";
 import SheltersScreen from "./screens/SheltersScreen";
 import DMVScreen from "./screens/DMVScreen";
-import DMV18PlusScreen from "./screens/DMV18PlusScreen";
 import DMVU18Screen1 from "./screens/DMVU18/DMVU18Screen1";
 import DMVU18Screen2 from "./screens/DMVU18/DMVU18Screen2";
 import DMVU18Screen3 from "./screens/DMVU18/DMVU18Screen3";
@@ -24,6 +23,26 @@ import DMVU18Screen9 from "./screens/DMVU18/DMVU18Screen9";
 import DMVU18Screen10 from "./screens/DMVU18/DMVU18Screen10";
 import DMVU18Screen11 from "./screens/DMVU18/DMVU18Screen11";
 import DMVU18Screen12 from "./screens/DMVU18/DMVU18Screen12";
+import DMVU18Screen13 from "./screens/DMVU18/DMVU18Screen13";
+import DMV18PlusScreen1 from "./screens/DMV18Plus/DMV18PlusScreen1";
+import DMV18PlusScreen2 from "./screens/DMV18Plus/DMV18PlusScreen2";
+import DMV18PlusScreen3 from "./screens/DMV18Plus/DMV18PlusScreen3";
+import DMV18PlusScreen4 from "./screens/DMV18Plus/DMV18PlusScreen4";
+import DMV18PlusScreen5 from "./screens/DMV18Plus/DMV18PlusScreen5";
+import DMV18PlusScreen6 from "./screens/DMV18Plus/DMV18PlusScreen6";
+import DMV18PlusScreen7 from "./screens/DMV18Plus/DMV18PlusScreen7";
+import DMV18PlusScreen8 from "./screens/DMV18Plus/DMV18PlusScreen8";
+import DMVNFCAScreen1 from "./screens/DMVNFCA/DMVNFCAScreen1";
+import DMVNFCAScreen2 from "./screens/DMVNFCA/DMVNFCAScreen2";
+import DMVNFCAScreen3 from "./screens/DMVNFCA/DMVNFCAScreen3";
+import DMVNFCAScreen4 from "./screens/DMVNFCA/DMVNFCAScreen4";
+import DMVNFCAScreen5 from "./screens/DMVNFCA/DMVNFCAScreen5";
+import DMVNFCAScreen6 from "./screens/DMVNFCA/DMVNFCAScreen6";
+import DMVNFCAScreen7 from "./screens/DMVNFCA/DMVNFCAScreen7";
+import DMVNLPScreen1 from "./screens/DMVNLP/DMVNLPScreen1";
+import DMVNLPScreen2 from "./screens/DMVNLP/DMVNLPScreen2";
+import DMVNLPScreen3 from "./screens/DMVNLP/DMVNLPScreen3";
+import DMVNLPScreen4 from "./screens/DMVNLP/DMVNLPScreen4";
 
 
 const Stack = createNativeStackNavigator();
@@ -51,10 +70,10 @@ export default function App() {
                           options={{presentation: 'modal', headerShown: true,
                             headerStyle: {backgroundColor: '#00cc81',},
                             headerTitleStyle: {fontSize: 30,},}}/>
-            <Stack.Screen name={"DMV18Plus"} component={DMV18PlusScreen}
-                          options={{headerStyle: {backgroundColor: '#00cc81',},
-                            headerTitleStyle: {fontSize: 30,},}}/>
-            <Stack.Screen name={"DMVScreen1"} component={DMVU18Screen1}
+
+
+
+            <Stack.Screen name={"DMVU18Screen1"} component={DMVU18Screen1}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
                               <HomeBackButton />
@@ -86,7 +105,7 @@ export default function App() {
                             animationTypeForReplace: 'pop',
                             title: "DMV",
                             headerTitleStyle: {fontSize: 30,},}}/>
-            <Stack.Screen name={"DMVScreen5"} component={DMVU18Screen5}
+            <Stack.Screen name={"DMVU18Screen5"} component={DMVU18Screen5}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
                               <HomeBackButton />
@@ -126,7 +145,7 @@ export default function App() {
                             animationTypeForReplace: 'pop',
                             title: "DMV",
                             headerTitleStyle: {fontSize: 30,},}}/>
-            <Stack.Screen name={"DMVScreen10"} component={DMVU18Screen10}
+            <Stack.Screen name={"DMVU18Screen10"} component={DMVU18Screen10}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
                               <HomeBackButton />
@@ -134,7 +153,7 @@ export default function App() {
                             animationTypeForReplace: 'pop',
                             title: "DMV",
                             headerTitleStyle: {fontSize: 30,},}}/>
-            <Stack.Screen name={"DMVScreen11"} component={DMVU18Screen11}
+            <Stack.Screen name={"DMVU18Screen11"} component={DMVU18Screen11}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
                               <HomeBackButton />
@@ -143,6 +162,169 @@ export default function App() {
                             title: "DMV",
                             headerTitleStyle: {fontSize: 30,},}}/>
             <Stack.Screen name={"DMVU18Screen12"} component={DMVU18Screen12}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <HomeBackButton />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "DMV",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"DMVU18Screen13"} component={DMVU18Screen13}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <HomeBackButton />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "DMV",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+
+
+            <Stack.Screen name={"DMV18PlusScreen1"} component={DMV18PlusScreen1}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <HomeBackButton />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "DMV",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"DMV18PlusScreen2"} component={DMVU18Screen2}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <HomeBackButton />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "DMV",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"DMV18PlusScreen3"} component={DMV18PlusScreen3}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <HomeBackButton />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "DMV",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"DMV18PlusScreen4"} component={DMV18PlusScreen4}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <HomeBackButton />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "DMV",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"DMV18PlusScreen5"} component={DMV18PlusScreen5}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <HomeBackButton />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "DMV",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"DMV18PlusScreen6"} component={DMVU18Screen6}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <HomeBackButton />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "DMV",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"DMV18PlusScreen7"} component={DMV18PlusScreen7}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <HomeBackButton />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "DMV",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"DMV18PlusScreen8"} component={DMV18PlusScreen8}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <HomeBackButton />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "DMV",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+
+            <Stack.Screen name={"DMVNFCAScreen1"} component={DMVNFCAScreen1}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <HomeBackButton />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "DMV",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"DMVNFCAScreen2"} component={DMVNFCAScreen2}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <HomeBackButton />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "DMV",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"DMVNFCAScreen3"} component={DMVNFCAScreen3}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <HomeBackButton />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "DMV",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"DMVNFCAScreen4"} component={DMVNFCAScreen4}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <HomeBackButton />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "DMV",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"DMVNFCAScreen5"} component={DMVNFCAScreen5}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <HomeBackButton />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "DMV",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"DMVNFCAScreen6"} component={DMVNFCAScreen6}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <HomeBackButton />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "DMV",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"DMVNFCAScreen7"} component={DMVNFCAScreen7}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <HomeBackButton />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "DMV",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"DMVNLPScreen1"} component={DMVNLPScreen1}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <HomeBackButton />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "DMV",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"DMVNLPScreen2"} component={DMVNLPScreen2}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <HomeBackButton />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "DMV",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"DMVNLPScreen3"} component={DMVNLPScreen3}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <HomeBackButton />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "DMV",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"DMVNLPScreen4"} component={DMVNLPScreen4}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
                               <HomeBackButton />

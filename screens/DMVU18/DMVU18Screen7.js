@@ -28,11 +28,6 @@ export default function DMVU18Screen7 () {
               resizeMode={"stretch"}
             />
           </TouchableOpacity>
-
-          <Text className={"text-lg"}>
-            Arrive 1 hour before the appointment to be sure you make it in on time, as the DMV can often have very long
-            wait times. You can take the test as many times as you want, but you must wait a week between each attempt.
-          </Text>
         </View>
 
         <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMVU18Screen8")}>

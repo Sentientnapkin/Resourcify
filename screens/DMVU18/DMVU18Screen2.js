@@ -9,7 +9,7 @@ export default function DMVU18Screen2 (){
   return (
       <View className={"flex-1 justify-center"}>
         <SafeAreaView className={"flex-row items-center"}>
-          <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMVScreen1")}>
+          <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMVU18Screen1")}>
             <ChevronLeftIcon color={"black"} size={48}/>
           </TouchableOpacity>
 

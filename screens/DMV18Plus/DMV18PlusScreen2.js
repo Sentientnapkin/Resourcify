@@ -3,13 +3,13 @@ import React from "react";
 import {ArrowTopRightOnSquareIcon, ChevronLeftIcon, ChevronRightIcon} from "react-native-heroicons/mini";
 import {useNavigation} from "@react-navigation/native";
 
-export default function DMVU18Screen5 (){
+export default function DMV18PlusScreen2 (){
   const navigation = useNavigation();
 
   return (
     <View className={"flex-1 justify-center"}>
       <SafeAreaView className={"flex-row items-center"}>
-        <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMVU18Screen4")}>
+        <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMV18PlusScreen1")}>
           <ChevronLeftIcon color={"black"} size={48}/>
         </TouchableOpacity>
 
@@ -35,7 +35,7 @@ export default function DMVU18Screen5 (){
             </TouchableOpacity>
       </View>
 
-        <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMVU18Screen6")}>
+        <TouchableOpacity className={"justify-center"} onPress={() => navigation.navigate("DMV18PlusScreen3")}>
           <ChevronRightIcon size={48} color={"black"}/>
         </TouchableOpacity>
       </SafeAreaView>
