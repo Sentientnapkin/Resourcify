@@ -54,7 +54,7 @@ export default function HomeScreen(){
 
           <View className={"flex-row justify-around"}>
             <Topic className="flex-1" title={"Clothes"} description={"Description"} screenToNavigate={""}/>
-            <Topic className="flex-1" title={"DMV"} description={"A guide on how to get a drivers license and more at the DMV."} screenToNavigate={"DMV"}/>
+            <Topic className="flex-1" title={"DMV"} description={"A guide on how to get a drivers license and more at the DMV. DMV stands for department of motor vehicles and a license to drive legally in the United States."} screenToNavigate={"DMV"}/>
           </View>
         </ScrollView>
       </View>

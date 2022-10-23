@@ -14,7 +14,7 @@ export default function DMVNFCAScreen4 () {
         </TouchableOpacity>
 
         <View className={"flex-1 bg-white p-3 rounded-lg"}>
-          <Text className={"text-lg"}>
+          <Text className={"text-md"}>
             -Provide your social security number (SSN).
             -Prove your identity with an acceptable identity document (original or certified copy) for either a Federal Non-Compliant or REAL ID Compliant DL/ID Card. Your current name needs to match the name on the identity document (see the FAQs below for more information). {"\n"}
             -Present acceptable residency documents (if you have never had a California DL/ID). {"\n"}

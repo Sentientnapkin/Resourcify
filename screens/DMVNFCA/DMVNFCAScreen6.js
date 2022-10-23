@@ -26,7 +26,7 @@ export default function DMVNFCAScreen6 () {
             onPress={() => Linking.openURL('https://www.dmv.ca.gov/portal/appointments/select-appointment-type')}>
             <Image
               source={{uri: 'https://www.dmv.ca.gov/portal/uploads/2022/06/DMV_Logo.png'}}
-              style={{width: '100%', height: 220}}
+              style={{width: '100%', height: 180}}
               resizeMode={"stretch"}
             />
           </TouchableOpacity>
