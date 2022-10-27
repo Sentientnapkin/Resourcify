@@ -2,7 +2,7 @@ import {Image, Linking, Modal, SafeAreaView, Text, TouchableOpacity, View} from 
 import {XMarkIcon} from "react-native-heroicons/mini";
 import React from "react";
 
-export default function LocationPopUp({title, description, website, imageURL, visible, setVisible, address}) {
+export default function LocationPopUp({title, description, address, website, imageURL, phoneNum, visible, setVisible}) {
   function modalVisibleHandler() {
     setVisible(false);
   }
@@ -12,10 +12,10 @@ export default function LocationPopUp({title, description, website, imageURL, vi
            animationType={"slide"}
            transparent={true}
            onRequestClose={() => modalVisibleHandler()}>
-      <View className={"flex-1 justify-center"}>
-        <View className={"absolute top-0 right-0"}>
+      <SafeAreaView className={"flex-1 justify-center"}>
+        <SafeAreaView className={"absolute top-0 right-0"}>
           <XMarkIcon size={48} color={"black"} onPress={() => modalVisibleHandler()}/>
-        </View>
+        </SafeAreaView>
         <SafeAreaView className={"flex-row items-center"}>
           <View className={"flex-1 bg-white p-3 rounded-lg"}>
             <Text className={"text-xl"}>
@@ -33,6 +33,9 @@ export default function LocationPopUp({title, description, website, imageURL, vi
                 {website}
               </Text>
             </TouchableOpacity>
+            <Text>
+              Contact: {phoneNum}
+            </Text>
             <View className={"items-center"}>
               <Image
                 source={{uri: imageURL}}
@@ -41,7 +44,7 @@ export default function LocationPopUp({title, description, website, imageURL, vi
             </View>
           </View>
         </SafeAreaView>
-      </View>
+      </SafeAreaView>
     </Modal>
   );
 }
