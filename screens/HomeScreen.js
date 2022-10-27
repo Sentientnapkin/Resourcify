@@ -1,4 +1,4 @@
-import {SafeAreaView, ScrollView, Text, TouchableOpacity, View,} from 'react-native';
+import { ScrollView, Text, TouchableOpacity, View,} from 'react-native';
 import {useLayoutEffect} from 'react';
 import {useNavigation} from "@react-navigation/native";
 import {TailwindProvider} from "tailwindcss-react-native";
@@ -38,7 +38,7 @@ export default function HomeScreen(){
             <Topic className="flex-1" title={"Housing"}
                    description={"Best locations for houses in the area, based on price, schools, crime rate, and more."}
                    screenToNavigate={"Housing"}/>
-            <Topic className="flex-1" title={"Shelters"} description={"Find Shelters in Fremont"} screenToNavigate={"Shelters"}/>
+            <Topic className="flex-1" title={"Shelters"} description={"Find shelters in your area."} screenToNavigate={"Shelters"}/>
           </View>
 
           <View className={"flex-row justify-around"}>
@@ -53,7 +53,7 @@ export default function HomeScreen(){
           </View>
 
           <View className={"flex-row justify-around"}>
-            <Topic className="flex-1" title={"Clothes"} description={"Description"} screenToNavigate={""}/>
+            <Topic className="flex-1" title={"Clothes"} description={"Affordable clothes in your area."} screenToNavigate={"Clothes"}/>
             <Topic className="flex-1" title={"DMV"} description={"A guide on how to get a drivers license and more at the DMV. DMV stands for department of motor vehicles and a license to drive legally in the United States."} screenToNavigate={"DMV"}/>
           </View>
         </ScrollView>
