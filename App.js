@@ -44,6 +44,7 @@ import DMVNLPScreen2 from "./screens/DMVNLP/DMVNLPScreen2";
 import DMVNLPScreen3 from "./screens/DMVNLP/DMVNLPScreen3";
 import DMVNLPScreen4 from "./screens/DMVNLP/DMVNLPScreen4";
 import ClothesScreen from "./screens/ClothesScreen";
+import FoodScreen from "./screens/FoodScreen";
 
 
 const Stack = createNativeStackNavigator();
@@ -69,6 +70,9 @@ export default function App() {
                             animationTypeForReplace: 'pop',
                             headerTitleStyle: {fontSize: 30,},}}/>
             <Stack.Screen name={"DMV"} component={DMVScreen}
+                          options={{headerStyle: {backgroundColor: '#00cc81'},
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"Food"} component={FoodScreen}
                           options={{headerStyle: {backgroundColor: '#00cc81'},
                             headerTitleStyle: {fontSize: 30,},}}/>
             <Stack.Screen name={"Settings"} component={SettingsScreen}

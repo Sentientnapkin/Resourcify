@@ -42,7 +42,7 @@ export default function HomeScreen(){
           </View>
 
           <View className={"flex-row justify-around"}>
-            <Topic className="flex-1" title={"Food"} description={"Description"} screenToNavigate={""}/>
+            <Topic className="flex-1" title={"Food"} description={"Food Banks and Soup Kitchens in your area."} screenToNavigate={"Food"}/>
             <Topic className="flex-1" title={"Financial Resources"} description={"Description"}
                    screenToNavigate={""}/>
           </View>
