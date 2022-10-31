@@ -36,29 +36,35 @@ export default function HomeScreen(){
       </View>
       <View className={"flex-1 bg-white"}>
         <ScrollView>
-          <View className={"flex-row justify-around"}>
             <Topic className="flex-1" title={"Housing"}
                    description={"Best locations for houses in the area, based on price, schools, crime rate, and more."}
+                   image={"https://img.icons8.com/office/344/cottage.png"}
                    screenToNavigate={"Housing"}/>
-            <Topic className="flex-1" title={"Shelters"} description={"Find shelters in your area."} screenToNavigate={"Shelters"}/>
-          </View>
+            <Topic className="flex-1" title={"Shelters"} description={"Find shelters in your area."}
+                   image={"https://cdn.iconscout.com/icon/free/png-256/shelter-in-place-2314600-1962039.png"}
+                   screenToNavigate={"Shelters"}/>
+            <Topic className="flex-1" title={"Food"} description={"Food Banks and Soup Kitchens in your area."}
+                   image={"https://img.icons8.com/office/344/rice-bowl.png"}
+                   screenToNavigate={"Food"}/>
+            <Topic className="flex-1" title={"Schools"} description={"Ratings of every school in Fremont."}
+                   image={"https://img.icons8.com/office/344/school.png"}
+                   screenToNavigate={"Schools"}/>
+            <Topic className="flex-1" title={"Financial Literacy"} description={"Resources for understanding how to manage your money, paying taxes, how to avoid scams, and more."}
+                   image={"https://img.icons8.com/office/344/online-payment-with-a-credit-card.png"}
+                   screenToNavigate={"Financial Literacy"}/>
+            <Topic className="flex-1" title={"Clothes"} description={"Affordable clothes in your area."}
+                   image={"https://img.icons8.com/office/344/clothes.png"}
+                   screenToNavigate={"Clothes"}/>
+            <Topic className="flex-1" title={"DMV"} description={"A guide on how to get a drivers license and more at the Department of Motor Vehicles."}
+                   image={"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/California_Department_of_Motor_Vehicles_logo.svg/480px-California_Department_of_Motor_Vehicles_logo.svg.png"}
+                   screenToNavigate={"DMV"}/>
 
-          <View className={"flex-row justify-around"}>
-            <Topic className="flex-1" title={"Food"} description={"Food Banks and Soup Kitchens in your area."} screenToNavigate={"Food"}/>
+          {/**
             <Topic className="flex-1" title={"Financial Resources"} description={"Description"}
+                    image={"https://img.icons8.com/office/344/money.png"}
                    screenToNavigate={""}/>
-          </View>
-
-          <View className={"flex-row justify-around"}>
-            <Topic className="flex-1" title={"Schools"} description={"Schools in Fremont"} screenToNavigate={"Schools"}/>
-            <Topic className="flex-1" title={"Financial Literacy"} description={"Resources for understanding how to manage your money, paying taxes, how to avoid scams, and more."} screenToNavigate={"Financial Literacy"}/>
-          </View>
-
-          <View className={"flex-row justify-around"}>
-            <Topic className="flex-1" title={"Clothes"} description={"Affordable clothes in your area."} screenToNavigate={"Clothes"}/>
-            <Topic className="flex-1" title={"DMV"} description={"A guide on how to get a drivers license and more at the DMV. DMV stands for department of motor vehicles and a license to drive legally in the United States."} screenToNavigate={"DMV"}/>
-          </View>
-        </ScrollView>
+           **/}
+            </ScrollView>
       </View>
     </TailwindProvider>
   );

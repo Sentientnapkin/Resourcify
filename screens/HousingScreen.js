@@ -1,15 +1,31 @@
-import {View, Text, SafeAreaView} from 'react-native';
+import {View, Text, SafeAreaView, Image, ScrollView} from 'react-native';
 import React from "react";
-import MapView from "react-native-maps";
-import {Marker} from "react-native-maps";
-import {useNavigation} from "@react-navigation/native";
+import json from '../data/fremontHousingData.json';
+import HomeBit from "../components/HomeBit";
 
 export default function HousingScreen (){
-  const navigation = useNavigation();
+  const data = json;
 
-    return(
-        <SafeAreaView className={"flex-1"}>
+  return(
+    <ScrollView>
+      <SafeAreaView className={"flex-1"}>
+        <View>
+          <Text className={"text-3xl text-center mt-12"}>
+            Individual Data
+          </Text>
+        </View>
 
-        </SafeAreaView>
-    );
+        {data.map((item) => {
+          return (
+              <HomeBit
+                name={item.name}
+                median_sale_price={item.median_sale_price}
+                growing_rate={item.growing_rate}
+                crime_rate={item.crime_rate}
+              />
+          )
+        })}
+      </SafeAreaView>
+    </ScrollView>
+  );
 }

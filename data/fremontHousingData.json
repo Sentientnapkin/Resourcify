@@ -1,0 +1,164 @@
+[
+ {
+   "name": "Ardenwood",
+   "median_sale_price": "1,550,000 ",
+   "growing_rate": "13%",
+   "crime_rate": "1652"
+ },
+ {
+   "name": "Lakes and Birds",
+   "median_sale_price": "1,286,000 ",
+   "growing_rate": "12.70%",
+   "crime_rate": "1155"
+ },
+ {
+   "name": "Northgate",
+   "median_sale_price": "1,582,000",
+   "growing_rate": "12.40%",
+   "crime_rate": "2459"
+ },
+ {
+   "name": "Mission Hills",
+   "median_sale_price": "3,560,000",
+   "growing_rate": "-59%",
+   "crime_rate": "1004"
+ },
+ {
+   "name": "East Industrial",
+   "median_sale_price": "1,320,000",
+   "growing_rate": "8.60%",
+   "crime_rate": "2335"
+ },
+ {
+   "name": "Warm Springs",
+   "median_sale_price": "1,225,000",
+   "growing_rate": "25.90%",
+   "crime_rate": "2562"
+ },
+ {
+   "name": "Vineyards/Avalon",
+   "median_sale_price": "2,850,000",
+   "growing_rate": "-11.30%",
+   "crime_rate": "1531"
+ },
+ {
+   "name": "Kimber/Los Palmas",
+   "median_sale_price": "n/a",
+   "growing_rate": "n/a",
+   "crime_rate": "1595"
+ },
+ {
+   "name": "Niles",
+   "median_sale_price": "1,266,500",
+   "growing_rate": "-1.80%",
+   "crime_rate": "2065"
+ },
+ {
+   "name": "Canyon Heights/Vallejo Millls/ Niles Crost",
+   "median_sale_price": "1,340,000",
+   "growing_rate": "0.80%",
+   "crime_rate": "1855"
+ },
+ {
+   "name": "Cabrillo",
+   "median_sale_price": "1,200,000",
+   "growing_rate": "-6.80%",
+   "crime_rate": "1213"
+ },
+ {
+   "name": "Brookvale",
+   "median_sale_price": "1,537,000",
+   "growing_rate": "-0.84%",
+   "crime_rate": "3043"
+ },
+ {
+   "name": "Parkmont",
+   "median_sale_price": "1,197,500",
+   "growing_rate": "4.10%",
+   "crime_rate": "2131"
+ },
+ {
+   "name": "Cherry/Guardino",
+   "median_sale_price": "800,000",
+   "growing_rate": "6%",
+   "crime_rate": "2700"
+ },
+ {
+   "name": "Centerville",
+   "median_sale_price": "827,500",
+   "growing_rate": "16.40%",
+   "crime_rate": "3193"
+ },
+ {
+   "name": "Glenmoor",
+   "median_sale_price": "1,600,000",
+   "growing_rate": "5.10%",
+   "crime_rate": "2495"
+ },
+ {
+   "name": "Sundale",
+   "median_sale_price": "1,200,000",
+   "growing_rate": "-4.80%",
+   "crime_rate": "3510"
+ },
+ {
+   "name": "28 Palms",
+   "median_sale_price": "1,250,000",
+   "growing_rate": "6.30%",
+   "crime_rate": "5324"
+ },
+ {
+   "name": "South Sundale",
+   "median_sale_price": "1,247,000",
+   "growing_rate": "-1.80%",
+   "crime_rate": "1689"
+ },
+ {
+   "name": "Central Downtown",
+   "median_sale_price": "792,000",
+   "growing_rate": "14%",
+   "crime_rate": "n/a"
+ },
+ {
+   "name": "Grimmer",
+   "median_sale_price": "1,565,000",
+   "growing_rate": "25.30%",
+   "crime_rate": "2018"
+ },
+ {
+   "name": "Cameron Hills",
+   "median_sale_price": "2,199,000",
+   "growing_rate": "-1.20%",
+   "crime_rate": "2410"
+ },
+ {
+   "name": "Weibel",
+   "median_sale_price": "2,550,000",
+   "growing_rate": "7.70%",
+   "crime_rate": "1276"
+ },
+ {
+   "name": "Irvington",
+   "median_sale_price": "1,335,000",
+   "growing_rate": "6%",
+   "crime_rate": "2661"
+ },
+ {
+   "name": "Blacow",
+   "median_sale_price": "1,337,500",
+   "growing_rate": "-3.10%",
+   "crime_rate": "1736"
+ },
+ {
+   "name": "Mission San Jose",
+   "median_sale_price": "1,525,000",
+   "growing_rate": "-10.60%",
+   "crime_rate": "1819"
+ },
+ {
+   "name": "Mission Valley",
+   "median_sale_price": "2,034,000",
+   "growing_rate": "-7.50%",
+   "crime_rate": "1273"
+ }
+]

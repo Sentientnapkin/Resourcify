@@ -12,7 +12,6 @@ import DMVScreen from "./screens/DMVScreen";
 import DMVU18Screen1 from "./screens/DMVU18/DMVU18Screen1";
 import DMVU18Screen2 from "./screens/DMVU18/DMVU18Screen2";
 import DMVU18Screen3 from "./screens/DMVU18/DMVU18Screen3";
-import HomeBackButton from "./components/HomeBackButton";
 import DMVU18Screen4 from "./screens/DMVU18/DMVU18Screen4";
 import DMVU18Screen5 from "./screens/DMVU18/DMVU18Screen5";
 import DMVU18Screen6 from "./screens/DMVU18/DMVU18Screen6";
@@ -212,7 +211,7 @@ export default function App() {
             <Stack.Screen name={"DMVU18Screen1"} component={DMVU18Screen1}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -220,7 +219,7 @@ export default function App() {
             <Stack.Screen name={"DMVU18Screen2"} component={DMVU18Screen2}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -228,7 +227,7 @@ export default function App() {
             <Stack.Screen name={"DMVU18Screen3"} component={DMVU18Screen3}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -236,7 +235,7 @@ export default function App() {
             <Stack.Screen name={"DMVU18Screen4"} component={DMVU18Screen4}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -244,7 +243,7 @@ export default function App() {
             <Stack.Screen name={"DMVU18Screen5"} component={DMVU18Screen5}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -252,7 +251,7 @@ export default function App() {
             <Stack.Screen name={"DMVU18Screen6"} component={DMVU18Screen6}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -260,7 +259,7 @@ export default function App() {
             <Stack.Screen name={"DMVU18Screen7"} component={DMVU18Screen7}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -268,7 +267,7 @@ export default function App() {
             <Stack.Screen name={"DMVU18Screen8"} component={DMVU18Screen8}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -276,7 +275,7 @@ export default function App() {
             <Stack.Screen name={"DMVU18Screen9"} component={DMVU18Screen9}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -284,7 +283,7 @@ export default function App() {
             <Stack.Screen name={"DMVU18Screen10"} component={DMVU18Screen10}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -292,7 +291,7 @@ export default function App() {
             <Stack.Screen name={"DMVU18Screen11"} component={DMVU18Screen11}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -300,7 +299,7 @@ export default function App() {
             <Stack.Screen name={"DMVU18Screen12"} component={DMVU18Screen12}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -308,7 +307,7 @@ export default function App() {
             <Stack.Screen name={"DMVU18Screen13"} component={DMVU18Screen13}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -318,7 +317,7 @@ export default function App() {
             <Stack.Screen name={"DMV18PlusScreen1"} component={DMV18PlusScreen1}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -326,7 +325,7 @@ export default function App() {
             <Stack.Screen name={"DMV18PlusScreen2"} component={DMVU18Screen2}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -334,7 +333,7 @@ export default function App() {
             <Stack.Screen name={"DMV18PlusScreen3"} component={DMV18PlusScreen3}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -342,7 +341,7 @@ export default function App() {
             <Stack.Screen name={"DMV18PlusScreen4"} component={DMV18PlusScreen4}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -350,7 +349,7 @@ export default function App() {
             <Stack.Screen name={"DMV18PlusScreen5"} component={DMV18PlusScreen5}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -358,7 +357,7 @@ export default function App() {
             <Stack.Screen name={"DMV18PlusScreen6"} component={DMVU18Screen6}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -366,7 +365,7 @@ export default function App() {
             <Stack.Screen name={"DMV18PlusScreen7"} component={DMV18PlusScreen7}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -374,7 +373,7 @@ export default function App() {
             <Stack.Screen name={"DMV18PlusScreen8"} component={DMV18PlusScreen8}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -383,7 +382,7 @@ export default function App() {
             <Stack.Screen name={"DMVNFCAScreen1"} component={DMVNFCAScreen1}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -391,7 +390,7 @@ export default function App() {
             <Stack.Screen name={"DMVNFCAScreen2"} component={DMVNFCAScreen2}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -399,7 +398,7 @@ export default function App() {
             <Stack.Screen name={"DMVNFCAScreen3"} component={DMVNFCAScreen3}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -407,7 +406,7 @@ export default function App() {
             <Stack.Screen name={"DMVNFCAScreen4"} component={DMVNFCAScreen4}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -415,7 +414,7 @@ export default function App() {
             <Stack.Screen name={"DMVNFCAScreen5"} component={DMVNFCAScreen5}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -423,7 +422,7 @@ export default function App() {
             <Stack.Screen name={"DMVNFCAScreen6"} component={DMVNFCAScreen6}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -431,7 +430,7 @@ export default function App() {
             <Stack.Screen name={"DMVNFCAScreen7"} component={DMVNFCAScreen7}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -439,7 +438,7 @@ export default function App() {
             <Stack.Screen name={"DMVNLPScreen1"} component={DMVNLPScreen1}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -447,7 +446,7 @@ export default function App() {
             <Stack.Screen name={"DMVNLPScreen2"} component={DMVNLPScreen2}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -455,7 +454,7 @@ export default function App() {
             <Stack.Screen name={"DMVNLPScreen3"} component={DMVNLPScreen3}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
@@ -463,7 +462,7 @@ export default function App() {
             <Stack.Screen name={"DMVNLPScreen4"} component={DMVNLPScreen4}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             headerLeft: () => (
-                              <HomeBackButton />
+                              <BackButton screenToNavigateTo={"DMV"} />
                             ),
                             animationTypeForReplace: 'pop',
                             title: "DMV",
