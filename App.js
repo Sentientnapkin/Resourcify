@@ -78,7 +78,10 @@ export default function App() {
                             headerTitleStyle: {fontSize: 30,},}}/>
 
 
-            <Stack.Screen name={"Housing"} component={HousingScreen}/>
+            <Stack.Screen name={"Housing"} component={HousingScreen}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                          animationTypeForReplace: 'pop',
+                          headerTitleStyle: {fontSize: 30,},}}/>
             <Stack.Screen name={"Shelters"} component={SheltersScreen}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
                             animationTypeForReplace: 'pop',
