@@ -8,22 +8,8 @@ export default function HousingScreen (){
   const navigation = useNavigation();
 
     return(
-        <View className={"flex-1"}>
-          <SafeAreaView className={'z-50'}>
-          </SafeAreaView>
+        <SafeAreaView className={"flex-1"}>
 
-          <MapView
-            initialRegion={{
-              latitude: 37.532044,
-              longitude: -121.980236,
-              latitudeDelta: 0.18,
-              longitudeDelta: 0.18,
-            }}
-            className={"flex-1 z-0"}
-            mapType={"mutedStandard"}
-          >
-
-          </MapView>
-        </View>
+        </SafeAreaView>
     );
 }

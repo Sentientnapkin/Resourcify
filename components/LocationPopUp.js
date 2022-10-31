@@ -32,7 +32,7 @@ export default function LocationPopUp({title, description, address, website, ima
               Address: {address} {"\n"}
             </Text>
             <TouchableOpacity onPress={() =>
-              Linking.openURL({website}+"")
+              Linking.openURL(website+'')
                 .then(() => {})
                 .catch(()=>{})
             }>

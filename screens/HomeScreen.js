@@ -1,5 +1,5 @@
 import { ScrollView, Text, TouchableOpacity, View,} from 'react-native';
-import {useLayoutEffect} from 'react';
+import {useEffect, useLayoutEffect} from 'react';
 import {useNavigation} from "@react-navigation/native";
 import {TailwindProvider} from "tailwindcss-react-native";
 import {useSelector} from "react-redux";
@@ -16,9 +16,11 @@ export default function HomeScreen(){
     });
   }, []);
 
-  if(language === ""){
-    navigation.navigate("LanguageSelector");
-  }
+  useEffect(() => {
+    if(language === ""){
+      navigation.navigate("LanguageSelector");
+    }
+  }, []);
 
   return (
     <TailwindProvider>
@@ -48,8 +50,8 @@ export default function HomeScreen(){
           </View>
 
           <View className={"flex-row justify-around"}>
-            <Topic className="flex-1" title={"Schools"} description={"Description"} screenToNavigate={""}/>
-            <Topic className="flex-1" title={"Financial Literacy"} description={"Description"} screenToNavigate={""}/>
+            <Topic className="flex-1" title={"Schools"} description={"Schools in Fremont"} screenToNavigate={"Schools"}/>
+            <Topic className="flex-1" title={"Financial Literacy"} description={"Resources for understanding how to manage your money, paying taxes, how to avoid scams, and more."} screenToNavigate={"Financial Literacy"}/>
           </View>
 
           <View className={"flex-row justify-around"}>

@@ -3,7 +3,6 @@ import {NavigationContainer} from "@react-navigation/native";
 import HomeScreen from "./screens/HomeScreen";
 import { TailwindProvider } from "tailwindcss-react-native";
 import LanguageSelectorScreen from "./screens/LanguageSelectorScreen";
-import FullInfoScreen from "./screens/FullInfoScreen";
 import {Provider} from "react-redux";
 import {store} from "./store";
 import HousingScreen from "./screens/HousingScreen";
@@ -45,6 +44,22 @@ import DMVNLPScreen3 from "./screens/DMVNLP/DMVNLPScreen3";
 import DMVNLPScreen4 from "./screens/DMVNLP/DMVNLPScreen4";
 import ClothesScreen from "./screens/ClothesScreen";
 import FoodScreen from "./screens/FoodScreen";
+import FinancialLiteracyScreen from "./screens/FinancialLiteracyScreen";
+import CreditReportsandScoresScreen from "./screens/FinancialLiteracy/CreditReportsandScoresScreen";
+import BackButton from "./components/BackButton";
+import IdentityTheftScreen from "./screens/FinancialLiteracy/IdentityTheftScreen";
+import CreditVsDebitScreen from "./screens/FinancialLiteracy/CreditVsDebitScreen";
+import FraudScamsScreen from "./screens/FinancialLiteracy/FraudScamsScreen";
+import LoansScreen from "./screens/FinancialLiteracy/LoansScreen";
+import TaxesScreen from "./screens/FinancialLiteracy/TaxesScreen";
+import BudgetingScreen1 from "./screens/FinancialLiteracy/Budgeting/BudgetingScreen1";
+import BudgetingScreen2 from "./screens/FinancialLiteracy/Budgeting/BudgetingScreen2";
+import BudgetingScreen3 from "./screens/FinancialLiteracy/Budgeting/BudgetingScreen3";
+import BudgetingScreen4 from "./screens/FinancialLiteracy/Budgeting/BudgetingScreen4";
+import BankOrCreditScreen1 from "./screens/FinancialLiteracy/Choosing Bank or Credit Union/BankOrCreditScreen1";
+import BankOrCreditScreen2 from "./screens/FinancialLiteracy/Choosing Bank or Credit Union/BankOrCreditScreen2";
+import BankOrCreditScreen3 from "./screens/FinancialLiteracy/Choosing Bank or Credit Union/BankOrCreditScreen3";
+import SchoolScreen from "./screens/SchoolScreen";
 
 
 const Stack = createNativeStackNavigator();
@@ -58,8 +73,12 @@ export default function App() {
             <Stack.Screen name="Home" component={HomeScreen}/>
             <Stack.Screen name={"LanguageSelector"} component={LanguageSelectorScreen}
                           options={{presentation: 'fullScreenModal', headerShown: false}}/>
-            <Stack.Screen name={"FullInfo"} component={FullInfoScreen}
-                          options={{presentation: 'fullScreenModal', headerShown: true}}/>
+            <Stack.Screen name={"Settings"} component={SettingsScreen}
+                          options={{presentation: 'modal', headerShown: true,
+                            headerStyle: {backgroundColor: '#00cc81',},
+                            headerTitleStyle: {fontSize: 30,},}}/>
+
+
             <Stack.Screen name={"Housing"} component={HousingScreen}/>
             <Stack.Screen name={"Shelters"} component={SheltersScreen}
                           options={{headerStyle: {backgroundColor: '#00cc81',},
@@ -75,11 +94,119 @@ export default function App() {
             <Stack.Screen name={"Food"} component={FoodScreen}
                           options={{headerStyle: {backgroundColor: '#00cc81'},
                             headerTitleStyle: {fontSize: 30,},}}/>
-            <Stack.Screen name={"Settings"} component={SettingsScreen}
-                          options={{presentation: 'modal', headerShown: true,
-                            headerStyle: {backgroundColor: '#00cc81',},
+            <Stack.Screen name={"Financial Literacy"} component={FinancialLiteracyScreen}
+                          options={{headerStyle: {backgroundColor: '#00cc81'},
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"Schools"} component={SchoolScreen}
+                          options={{headerStyle: {backgroundColor: '#00cc81'},
                             headerTitleStyle: {fontSize: 30,},}}/>
 
+
+            <Stack.Screen name={"BudgetingScreen1"} component={BudgetingScreen1}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <BackButton screenToNavigateTo={"Financial Literacy"} />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "Budgeting",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"BudgetingScreen2"} component={BudgetingScreen2}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <BackButton screenToNavigateTo={"Financial Literacy"} />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "Budgeting",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"BudgetingScreen3"} component={BudgetingScreen3}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <BackButton screenToNavigateTo={"Financial Literacy"} />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "Budgeting",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"BudgetingScreen4"} component={BudgetingScreen4}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <BackButton screenToNavigateTo={"Financial Literacy"} />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "Budgeting",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"BankOrCreditScreen1"} component={BankOrCreditScreen1}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <BackButton screenToNavigateTo={"Financial Literacy"} />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "Bank vs. Credit Union",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"BankOrCreditScreen2"} component={BankOrCreditScreen2}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <BackButton screenToNavigateTo={"Financial Literacy"} />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "Bank vs. Credit Union",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"BankOrCreditScreen3"} component={BankOrCreditScreen3}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <BackButton screenToNavigateTo={"Financial Literacy"} />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "Bank vs. Credit Union",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"Taxes"} component={TaxesScreen}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <BackButton screenToNavigateTo={"Financial Literacy"} />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "Taxes",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"Loans"} component={LoansScreen}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <BackButton screenToNavigateTo={"Financial Literacy"} />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "Loans",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"Fraud/Scam"} component={FraudScamsScreen}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <BackButton screenToNavigateTo={"Financial Literacy"} />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "Frauds and Scams",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"Credit vs Debit"} component={CreditVsDebitScreen}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <BackButton screenToNavigateTo={"Financial Literacy"} />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "Credit vs. Debit",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"CreditReportsandScoresScreen"} component={CreditReportsandScoresScreen}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <BackButton screenToNavigateTo={"Financial Literacy"} />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "Credit Cards",
+                            headerTitleStyle: {fontSize: 30,},}}/>
+
+            <Stack.Screen name={"Identity Theft"} component={IdentityTheftScreen}
+                          options={{headerStyle: {backgroundColor: '#00cc81',},
+                            headerLeft: () => (
+                              <BackButton screenToNavigateTo={"Financial Literacy"} />
+                            ),
+                            animationTypeForReplace: 'pop',
+                            title: "Identity Theft",
+                            headerTitleStyle: {fontSize: 30,},}}/>
 
 
             <Stack.Screen name={"DMVU18Screen1"} component={DMVU18Screen1}

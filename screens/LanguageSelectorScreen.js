@@ -1,13 +1,13 @@
-import {Text, View, SafeAreaView, TouchableOpacity} from 'react-native';
-import {Menu, MenuOption, MenuOptions, MenuProvider, MenuTrigger} from "react-native-popup-menu";
+import {Text, View, SafeAreaView} from 'react-native';
+import {Menu, MenuOption, MenuOptions, MenuProvider, MenuTrigger, renderers} from "react-native-popup-menu";
 import {useNavigation} from "@react-navigation/native";
 import {setLanguageAction} from "../redux/actions/setLanguageAction";
 import { useDispatch } from "react-redux";
-import {Cog6ToothIcon} from "react-native-heroicons/mini";
 
 export default function LanguageSelectorScreen (){
   const navigation = useNavigation();
   const dispatch = useDispatch();
+  const {SlideInMenu} = renderers;
 
   const handleLanguage = (language) => {
     dispatch(setLanguageAction(language));
@@ -27,7 +27,7 @@ export default function LanguageSelectorScreen (){
         <SafeAreaView className={"flex-1 items-center justify-center bg-white"}>
           <View className={"absolute"}>
             <MenuProvider className={"bg-[#00cc81] px-8 pt-8 pb-28 rounded-lg"}>
-              <Menu>
+              <Menu renderer={SlideInMenu}>
                 <MenuTrigger>
                   <Text className={"text-lg"}>
                     Choose A Language
