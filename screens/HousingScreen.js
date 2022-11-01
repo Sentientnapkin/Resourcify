@@ -1,4 +1,4 @@
-import {View, Text, SafeAreaView, Image, ScrollView} from 'react-native';
+import {View, Text, SafeAreaView, Image, ScrollView, TouchableOpacity, Linking} from 'react-native';
 import React from "react";
 import json from '../data/fremontHousingData.json';
 import HomeBit from "../components/HomeBit";
@@ -9,8 +9,8 @@ export default function HousingScreen (){
 
   return(
     <ScrollView className={"bg-gray-200"}>
-      <SafeAreaView className={"flex-1"}>
-        <SafeAreaView>
+      <SafeAreaView className={""}>
+          {/**
           <View className={"absolute top-0 right-0 z-50 items-start"}>
             <MenuProvider className={"flex-1 w-52 h-52"}>
               <Menu>
@@ -44,10 +44,20 @@ export default function HousingScreen (){
               </Menu>
             </MenuProvider>
           </View>
+        **/}
 
 
-          <Image />
-        </SafeAreaView>
+        <View className={"items-center justify-center mt-4 bg-white rounded-lg p-4 shadow-2xl"}>
+          <Text className={"text-lg"}>
+            Heat Map of Crime (Darker = More Crime)
+          </Text>
+        </View>
+
+        <Image
+          source={{uri: 'https://cdn.discordapp.com/attachments/762136512170295336/1036875238648062012/CrimeHeatMap.png'}}
+          style={{height: 400}}
+          resizeMode={"contain"}
+        />
 
         <View>
           <Text className={"text-3xl text-center"}>
@@ -56,12 +66,14 @@ export default function HousingScreen (){
         </View>
 
         <View>
-          <Text className={"text-base text-center"}>
-            See more about which neighborhoods go to which schools here:
-            <Text className={"text-blue-400"}>
-              https://www.myschoollocation.com/fremontusd2/
+          <TouchableOpacity onPress={() => Linking.openURL('https://www.myschoollocation.com/fremontusd2/')}>
+            <Text className={"text-base text-center"}>
+              See more about which neighborhoods go to which schools here: {" "}
+              <Text className={"text-blue-400"}>
+                https://www.myschoollocation.com/fremontusd2/
+              </Text>
             </Text>
-          </Text>
+          </TouchableOpacity>
         </View>
 
         {data.map((item) => {

@@ -58,6 +58,10 @@ export default function HomeScreen(){
             <Topic className="flex-1" title={"DMV"} description={"A guide on how to get a drivers license and more at the Department of Motor Vehicles."}
                    image={"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/California_Department_of_Motor_Vehicles_logo.svg/480px-California_Department_of_Motor_Vehicles_logo.svg.png"}
                    screenToNavigate={"DMV"}/>
+            <Topic className="flex-1" title={"Neighborhoods"}
+                   description={"A map of all the neighborhoods in Fremont."}
+                   image={"https://img.icons8.com/color/344/neighborhood.png"}
+                   screenToNavigate={"Neighborhoods"}/>
 
           {/**
             <Topic className="flex-1" title={"Financial Resources"} description={"Description"}

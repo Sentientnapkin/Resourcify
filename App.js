@@ -59,6 +59,7 @@ import BankOrCreditScreen1 from "./screens/FinancialLiteracy/Choosing Bank or Cr
 import BankOrCreditScreen2 from "./screens/FinancialLiteracy/Choosing Bank or Credit Union/BankOrCreditScreen2";
 import BankOrCreditScreen3 from "./screens/FinancialLiteracy/Choosing Bank or Credit Union/BankOrCreditScreen3";
 import SchoolScreen from "./screens/SchoolScreen";
+import NeighborhoodsScreen from "./screens/NeighborhoodsScreen";
 
 
 const Stack = createNativeStackNavigator();
@@ -100,6 +101,9 @@ export default function App() {
                           options={{headerStyle: {backgroundColor: '#00cc81'},
                             headerTitleStyle: {fontSize: 30,},}}/>
             <Stack.Screen name={"Schools"} component={SchoolScreen}
+                          options={{headerStyle: {backgroundColor: '#00cc81'},
+                            headerTitleStyle: {fontSize: 30,},}}/>
+            <Stack.Screen name={"Neighborhoods"} component={NeighborhoodsScreen}
                           options={{headerStyle: {backgroundColor: '#00cc81'},
                             headerTitleStyle: {fontSize: 30,},}}/>
 
