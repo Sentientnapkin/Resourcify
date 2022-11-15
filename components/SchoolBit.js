@@ -2,7 +2,7 @@ import {View, Text, TouchableOpacity, Linking, Image} from 'react-native';
 import React from 'react';
 import {NoSymbolIcon} from "react-native-heroicons/outline";
 
-export default function SchoolBit({name, rating, url, address, phoneNum, rating_url, image}){
+export default function SchoolBit({name, rating, url, address, phoneNum, rating_url, image}, key){
   return(
     <View className={"p-2 bg-white rounded-md mt-0.5 mx-0.5"}>
       <View className={"flex-row justify-between items-center"}>

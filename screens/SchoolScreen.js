@@ -11,6 +11,7 @@ export default function SchoolScreen(){
   const [elementarySchools, setElementarySchools] = React.useState(false);
   const [middleSchools, setMiddleSchools] = React.useState(false);
   const [highSchools, setHighSchools] = React.useState(false);
+  let key = 0;
 
   const handleAllSchools = () => {
     setAllSchools(true);
@@ -81,6 +82,7 @@ export default function SchoolScreen(){
           if(allSchools){
             return (
               <SchoolBit
+                key={key++}
                 name={item.name}
                 rating={item.rating}
                 url={item.url}
@@ -93,6 +95,7 @@ export default function SchoolScreen(){
         } else if (elementarySchools && item.name.includes("Elementary")){
             return (
               <SchoolBit
+                key={key++}
                 name={item.name}
                 rating={item.rating}
                 url={item.url}
@@ -105,6 +108,7 @@ export default function SchoolScreen(){
         } else if (middleSchools && (item.name.includes("Middle")||item.name.includes("Junior"))){
             return (
               <SchoolBit
+                key={key++}
                 name={item.name}
                 rating={item.rating}
                 url={item.url}
@@ -117,6 +121,7 @@ export default function SchoolScreen(){
         } else if (highSchools && item.name.includes("High") && !item.name.includes("Junior")){
             return (
               <SchoolBit
+                key={key++}
                 name={item.name}
                 rating={item.rating}
                 url={item.url}

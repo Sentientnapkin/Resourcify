@@ -1,7 +1,7 @@
 import {View, Text, Image} from 'react-native';
 import React from 'react';
 
-export default function HomeBit({name, median_sale_price, growing_rate, crime_rate, image_url}){
+export default function HomeBit({name, median_sale_price, growing_rate, crime_rate, image_url}, key){
   return(
     <View className={"p-2 bg-white rounded-md mt-0.5 mx-0.5 flex-row"}>
       <View className={"basis-7/12"}>

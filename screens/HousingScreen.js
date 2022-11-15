@@ -6,6 +6,7 @@ import {Menu, MenuOption, MenuOptions, MenuProvider, MenuTrigger} from "react-na
 
 export default function HousingScreen (){
   const data = json;
+  let key = 0;
 
   return(
     <ScrollView className={"bg-gray-200"}>
@@ -79,6 +80,7 @@ export default function HousingScreen (){
         {data.map((item) => {
           return (
               <HomeBit
+                key = {key++}
                 name={item.name}
                 median_sale_price={item.median_sale_price}
                 growing_rate={item.growing_rate}
